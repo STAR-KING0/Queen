@@ -1,17 +1,8 @@
 FROM node:20
 
+RUN git clone https://github.com/STAR-KING0/Queen_Alya.git /root/STAR-KING0
 
-USER node
-
-
-RUN git clone https://github.com/Kingzoro-bot/Bot home/node/blue
-
-
-WORKDIR /home/node/blue
-
-
-RUN chmod -R 777 /home/node/blue/
-
+WORKDIR /root/STAR-KING0 
 
 RUN yarn install && yarn add http
 
